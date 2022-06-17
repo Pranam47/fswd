@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background: #d0c9c0;      /*background main*/
+  /*background-image: linear-gradient(to right, #bdc3c7, #2c3e50);
+*/
+}
+.wrapper{
+  max-width: 1090px;
+  width: 100%;
+  margin: auto;
+  display: flex;               /*white background description*/
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.wrapper .table{
+  background: #ffffff;
+  width: calc(33% - 20px);     /*white background properties*/
+  border-radius: 50px;
+  padding: 30px 30px;        
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.table .price-section{
+  display: flex;           /*top box of buy sell donbate */
+  justify-content: center;
+}
+.table .price-area{  /*box area of top sell buy donate*/
+  height: 120px;
+  width: 120px;
+  /*border-radius: 50%;*/
+  padding: 2px;  
+  color: gold;              
+}
+.price-area .inner-area{
+  height: 100%;
+  width: 100%;
+  line-height: 117px;
+  text-align: center;
+  justify-content: center;
+  color: #000000;             /*buy sell donate top text*/
+  position: relative;
+}
+.price-area .inner-area .text{
+  font-size: 25px;
+  font-weight: 400;
+  position: absolute;
+  top: -10px;
+  left: 17px;
+  justify-content: center
+}
+.price-area .inner-area .price{
+  font-size: 50px;
+  font-weight: 500; 
+  text-align: center;
+  justify-content: center;        /* top bsd text ppts */
+}
+
+.table .features li{ /*features of 3 main tables*/
+  margin-bottom: 15px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.features li .list-name{  /*the list features*/
+  font-size: 17px;
+  font-weight: 400;
+}
+.features li .icon{
+  font-size: 1500px;
+}
+.features li .icon.check{
+  color: #001122;
+}
+.features li .icon.cross{
+  color: #fff000;
+}
+.table .btn{
+  width: 100%;
+  display: flex;    /*button ppts*/
+  margin-top: 35px;
+  justify-content: center;
+}
+/*buy sell donate buttons*/
+.table .btn button{ 
+  width: 80%;
+  height: 50px;
+  color: green;
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.table .btn button:hover{ /*after hovering over button*/
+  border-radius: 25px;
+}
+
+/*area around the top buy*/
+/*.basic ::selection,
+.basic .price-area,   
+.basic .inner-area{
+  background: #053abc;
+}*/
+.basic .btn button{
+  border: 2px solid #28df99; /*buy button border*/
+  background: #28df99;
+  color: black;
+}
+.basic .btn button:hover{
+  border: 2px solid #4b8673;
+  background: #4b8673;
+  color: white;
+}
+/*.premium ::selection,
+.premium .price-area,
+.premium .inner-area,
+*/
+
+.premium .btn button{
+  border: 2px solid #28df99; /*sell button border*/
+  background: #28df99;
+  color: black;
+}
+.premium .btn button:hover{
+  border: 2px solid #4b8673;
+  background: #4b8673;
+  color: white;
+}
+
+.ultimate ::selection,
+.ultimate .price-area,
+.ultimate .inner-area{
+  background: white;
+   
+}
+.ultimate .btn button{
+  border: 2px solid #28df99;
+  color: black;
+  background:#28df99 ;
+}
+.ultimate .btn button:hover{
+  background: #4b8673;
+  border: 2px solid #4b8673;
+  color: white;
+}
+/*.basic .package-name{
+  background: #000000;  /*line black/
+}
+.premium .package-name{
+  background: black;
+}
+.ultimate .package-name{
+  background: black;
+}*/
+/*.basic .package-name::before{
+  content: "Basic";
+}
+.premium .package-name::before{     
+  content: "Premium";
+  font-size: 24px;
+}
+.ultimate .package-name::before{
+  content: "Ultimate";
+  font-size: 24px;
+}*//*all this is for the tags */
+@media (max-width: 1020px) {
+  .wrapper .table{
+    width: calc(50% - 20px);
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 698px) {
+  .wrapper .table{
+    width: 100%;
+  }
+}
+::selection{
+  color: #fff;
+}
+/*.table .ribbon{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  overflow: hidden;
+}
+.table .ribbon::before,
+.table .ribbon::after{
+  position: absolute;
+  content: "";
+  z-index: -1;
+  display: block;
+  border: 7px solid #4606ac;
+  border-top-color: transparent;
+  border-left-color: transparent;
+}*/
+/*.table .ribbon::before{
+  top: 0px;
+  right: 15px;
+}
+.table .ribbon::after{
+  bottom: 15px;
+  left: 0px;
+}*/
+/*.table .ribbon span{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  transform: rotate(-45deg);
+  width: 200px;
+  background: #a26bfa;
+  padding: 10px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+}*/
